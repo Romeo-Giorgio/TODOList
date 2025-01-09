@@ -10,6 +10,7 @@ jobs:
   # Premier job: exécution des tests
   test:
     runs-on: ubuntu-latest
+    
      steps:
       # Vérifier le code source
       - name: Checkout code
