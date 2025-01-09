@@ -10,8 +10,8 @@ jobs:
   # Premier job: exécution des tests
   test:
     runs-on: ubuntu-latest
-    
-      steps:
+
+    steps:
       # Vérifier le code source
       - name: Checkout code
         uses: actions/checkout@v3
@@ -30,7 +30,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-  # Deuxième job: déploiement 
+  # Deuxième job: déploiement
   deploy:
     needs: test # Exécute le job de déploiement seulement si le job "test" réussi
     runs-on: ubuntu-latest
